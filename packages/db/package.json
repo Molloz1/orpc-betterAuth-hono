@@ -1,0 +1,35 @@
+{
+  "name": "@repo/db-config",
+  "type": "module",
+  "license": "MIT",
+  "version": "0.1.0",
+  "exports": {
+    "./book-schema": "./src/schemas/book-schema.ts",
+    "./auth-schema": "./src/schemas/auth-schema.ts",
+    "./db": "./src/utils/db.ts",
+    "./drizzle": "./src/utils/drizzle-exports.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "@types/node": "22.20.2",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^1.0.0-rc.4",
+    "pg": "^8.23.0"
+  },
+  "scripts": {
+    "db:push": "bun drizzle-kit push",
+    "db:generate": "bun drizzle-kit generate",
+    "db:migrarte": "bun drizzle-kit migrarte"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/node": "26.4.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "eslint": "10.9.1",
+    "typescript": "7.0.2",
+    "drizzle-kit": "^1.0.0-rc.4",
+    "tsx": "^4.23.13"
+  }
+}

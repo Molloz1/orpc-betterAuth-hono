@@ -1,0 +1,15 @@
+{
+  "name": "@repo/auth-config",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@repo/db-config": "*",
+    "better-auth": "^1.7.4",
+    "dotenv": "^17.4.2",
+    "pg": "^8.23.0"
+  },
+  "exports": {
+    "./auth": "./lib/auth.ts"
+  }
+}

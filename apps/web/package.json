@@ -11,6 +11,9 @@
     "check-types": "next typegen && tsc --noEmit"
   },
   "dependencies": {
+    "@orpc/client": "^2.0.0-beta.35",
+    "@orpc/contract": "^2.0.0-beta.35",
+    "@repo/orpc-contract-config": "*",
     "@repo/ui": "*",
     "next": "16.3.4",
     "react": "19.2.8",
